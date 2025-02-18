@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estadios LIGA MX</title>
+<style>
+       table {
+           width: 75%;
+           margin: auto;
+           text-align: center;
+       }
+       iframe {
+           width: 500px;
+           height: 300px;
+           border: 1px solid black;
+       }
+       img {
+           width: 100px;
+           cursor: pointer;
+       }
+</style>
+</head>
+<body>
+<h1 style="text-align: center;">Estadios</h1>
+<table>
+<tr>
+<td>
+<img src="Nemesio.jpg" onclick="cargarImagen('Nemesio.jpg')" alt="Nemesio Diez">
+<img src="Victoria.jfif" onclick="cargarImagen('Victoria.jfif')" alt="Victoria">
+<img src="Akron.jfif" onclick="cargarImagen('Akron.jfif')" alt="Akron">
+<img src="BBVA.jpg" onclick="cargarImagen('BBVA.jpg')" alt="BBVA">
+</td>
+</tr>
+<tr>
+<td>
+<iframe id="visor" src=""></iframe>
+</td>
+</tr>
+</table>
+<script>
+       function cargarImagen(imagen) {
+           document.getElementById('visor').src = imagen;
+       }
+</script>
+</body>
+</html>
