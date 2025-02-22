@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo en San Luis Potosí</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        header { background-color: green; color: white; padding: 15px; }
+        section { margin: 20px; }
+        iframe { width: 400px; height: 300px; border: 1px solid black; }
+        .container { display: flex; justify-content: center; gap: 20px; }
+        .visit { background-color: skyblue; padding: 4px }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Programación Web I PRIM25</h1>
+        <h2>Evaluación Práctica Parcial 1</h2>
+        <h3>Profesora: Imelda Dayanira Hernández Martínez</h3>
+        <h3>Alumno: Erick Ismael Ojeda Sanchez</h3>
+    </header>
+    
+    <section>
+        <h2 class="visit">Visita mi Estado, San Luis Potosí</h2>
+
+        <div class="container">
+            <img src="slp.jpg" alt="Mapa de San Luis Potosí" onclick="cargarIframe('https://sitio.sanluis.gob.mx')">
+            <iframe id="contenido" src=""></iframe>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Lugares que no te puedes perder!</h2>
+        <img src="centro.jpg" alt="Lugar: centro historico" width="300">
+        <img src="huasteca.jpg" alt="Lugar: huasteca potosina " width="300">
+        <img src="parque.jpg" alt="Lugar turístico 3" width="300">
+    </section>
+    
+    <section>
+        <h2>Información General</h2>
+        <table border="1" align="center">
+            <tr>
+                <th>Dirección</th>
+                <th>Contacto</th>
+            </tr>
+            <tr>
+                <td>Universidad Politécnica de San Luis Potosí</td>
+                <td>info@upslp.edu.mx</td>
+            </tr>
+        </table>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Turismo San Luis Potosí</p>
+    </footer>
+    
+    <script>
+        function cargarIframe(url) {
+            document.getElementById('contenido').src = url;
+        }
+    </script>
+</body>
+</html>
