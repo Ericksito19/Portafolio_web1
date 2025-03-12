@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: lightgray; 
+}
+
+h1, h2 {
+    color: navy; 
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: navy; 
+    color: gold; 
+}
+
+td {
+    background-color: white; 
+}
+
+.resaltado td {
+    background-color: gold; 
+    color: black; 
+}
+
+footer {
+    margin-top: 20px;
+    font-weight: bold;
+}
