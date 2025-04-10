@@ -1,64 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parcial 2</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f0f0f0;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100vh;
-      }
-      h1 {
-        text-align: center;
-        color: #333;
-      }
-      ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-        padding: 0;
-      }
-      li {
-        margin: 0 15px;
-      }
-      a {
-        text-decoration: none;
-        color: #007bff;
-        font-weight: bold;
-        transition: color 0.3s;
-      }
-      a:hover {
-        color: #0056b3;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Parcial 2</h1>
-    <ul>
-      <li><a href="practica1Parcial2.html">Practica 1</a></li>
-      <li><a href="practica2Parcial2.html">Practica 2</a></li>
-      <li><a href="practica3Parcial2.html">Practica 3 Tablas con CSS</a></li>
-      <li><a href="../Web/Web/index.html">Practica 6 Farmacias similares</a></li
-      <li><a href="practica7Parcial2.html">Practica 7 FLEXBOX en CSS</a></li>
-      <li><a href="practica8Parcial2.html">Practica8 Propiedades position y z-index</a></li>
-      <li><a href="practica9Parcial2.html">Practica9 Unidades de medida</a></li>
-      <li><a href="ExamenP2.html">Examen Practica Parcial 2</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Parcial 2 - Actividades</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #005A9C, #003566);
+      color: white;
+      min-height: 100vh;
+      padding: 20px;
+    }
 
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+    }
 
-                                                                        
-      
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
 
+    .card {
+      background: white;
+      color: #005A9C;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
 
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    }
 
-      
-    </ul>
-  </body>
+    .card a {
+      text-decoration: none;
+      color: #005A9C;
+      font-weight: 600;
+      font-size: 1.1rem;
+      display: block;
+    }
+
+    .card a:hover {
+      color: #FF5733;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Parcial 2 - Actividades</h1>
+
+  <div class="grid">
+    <div class="card"><a href="practica1Parcial2.html">Práctica 1</a></div>
+    <div class="card"><a href="practica2Parcial2.html">Práctica 2</a></div>
+    <div class="card"><a href="practica3Parcial2.html">Práctica 3 - Tablas con CSS</a></div>
+    <div class="card"><a href="../Web/Web/index.html">Práctica 6 - Farmacias Similares</a></div>
+    <div class="card"><a href="practica7Parcial2.html">Práctica 7 - Flexbox en CSS</a></div>
+    <div class="card"><a href="practica8Parcial2.html">Práctica 8 - Position y Z-Index</a></div>
+    <div class="card"><a href="practica9Parcial2.html">Práctica 9 - Unidades de Medida</a></div>
+    <div class="card"><a href="ExamenP2.html">Examen Práctico - Parcial 2</a></div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 | Portafolio de Erick Ojeda - Programación Web I</p>
+  </footer>
+
+</body>
 </html>
